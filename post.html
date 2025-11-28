@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>게시글 - juhyun95park's Blog</title>
+  <meta name="description" content="juhyun95park의 기술 블로그">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/prism.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-content">
+        <a href="index.html" class="logo">juhyun95park</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="테마 변경">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main post-main">
+      <article class="post-article">
+        <div class="post-header" id="post-header">
+          <a href="index.html" class="back-link">← 목록으로</a>
+          <h1 class="post-title" id="post-title">로딩 중...</h1>
+          <div class="post-meta" id="post-meta">
+            <!-- 메타 정보가 JavaScript로 동적 생성됨 -->
+          </div>
+        </div>
+
+        <div class="post-content" id="post-content">
+          <div class="loading" id="loading">
+            <span class="loading-spinner"></span>
+            <span>게시글을 불러오는 중...</span>
+          </div>
+        </div>
+
+        <div class="post-tags" id="post-tags">
+          <!-- 태그가 JavaScript로 동적 생성됨 -->
+        </div>
+      </article>
+
+      <section class="comments-section" id="comments-section">
+        <h2 class="comments-title">댓글</h2>
+        <div id="giscus-container">
+          <!-- Giscus 댓글이 JavaScript로 로드됨 -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 juhyun95park. Powered by GitHub Pages.</p>
+    </footer>
+  </div>
+
+  <!-- marked.js for Markdown parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- Prism.js for code highlighting -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  
+  <script src="js/theme.js"></script>
+  <script src="js/post-loader.js"></script>
+</body>
+</html>
+
