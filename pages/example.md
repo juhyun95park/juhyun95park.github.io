@@ -37,13 +37,13 @@ description: "GitHub Pages를 이용한 정적 블로그 구축 가이드"
 ```javascript
 // 게시글 목록을 가져오는 함수
 async function loadPosts() {
-  const response = await fetch('posts.json');
+  const response = await fetch("posts.json");
   const posts = await response.json();
   return posts;
 }
 
 // 사용 예시
-loadPosts().then(posts => {
+loadPosts().then((posts) => {
   console.log(`총 ${posts.length}개의 게시글`);
 });
 ```
@@ -131,4 +131,3 @@ description: "게시글 설명"
 ```
 
 즐거운 블로깅 되세요! 🚀
-
